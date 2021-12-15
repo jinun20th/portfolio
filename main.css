@@ -79,8 +79,8 @@ body {
     font-size: 24px;
     line-height: 1.5;
     font-weight: 700;
-    padding: 0 1.5em;
     min-width: 200px;
+    padding: 0 1.5em;
     color: var(--second-color);
 }
 
@@ -121,9 +121,9 @@ body {
 }
 
 .sec-2-content {
+    color: #fff;
     margin: auto;
     padding-top: 35%;
-    color: #fff;
 }
 
 .sec-2-text-1 {
@@ -143,13 +143,13 @@ body {
 }
 
 .sec-2-btn {
-    border-radius: 20px;
-    border: 1px solid #007bff;
-    color: #007bff;
-    padding: 1.25em 5em;
-    margin: 1.25em 0.5em 0 0;
     font-size: 16px;
     font-weight: 500;
+    color: #007bff;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    padding: 1.25em 5em;
+    margin: 1.25em 0.5em 0 0;
 }
 
 .load {
@@ -218,8 +218,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5em 0;
     color: var(--second-color);
+    margin: 1.5em 0;
 }
 
 .sec-3-item i {
@@ -228,16 +228,16 @@ body {
 }
 
 .sec-3-item h2 {
-    padding: 10px 0;
     line-height: 50px;
     font-size: 30px;
     font-weight: 700;
+    padding: 0.75em 0;
 }
 
 .sec-3-item p {
     font-size: 22px;
-    text-align: center;
     line-height: 50px;
+    text-align: center;
 }
 
 
@@ -316,11 +316,11 @@ body {
 .sec-4-form input {
     width: 100%;
     height: 50px;
+    font-size: 16px;
+    line-height: 1;
     border: none;
     border-bottom: 1px solid var(--second-color);
     background: 0 0;
-    font-size: 16px;
-    line-height: 1;
 }
 
 .form-control:focus {
@@ -334,11 +334,11 @@ body {
 }
 
 .sec-4-btn button {
-    border: none;
-    background: none;
     font-size: 16px;
     font-weight: 500;
+    border: none;
     color: var(--second-color);
+    background: none;
 }
 
 .sec-4-btn button:hover {
@@ -355,17 +355,17 @@ body {
 }
 
 .sec-5-content {
-    padding: 3em 0;
     display: flex;
     justify-content: space-around;
+    padding: 3em 0;
 }
 
 .sec-5-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5em 0;
     color: var(--second-color);
+    margin: 1.5em 0;
 }
 
 .sec-5-item i {
@@ -374,10 +374,10 @@ body {
 }
 
 .sec-5-item h2 {
-    padding: 10px 0;
-    line-height: 50px;
     font-size: 30px;
     font-weight: 700;
+    line-height: 50px;
+    padding: 10px 0;
 }
 
 .sec-5-item p {
@@ -419,17 +419,17 @@ body {
 
 .info .name,
 .info .work {
-    color: var(--second-color);
     font-size: 22px;
     font-weight: 500;
+    color: var(--second-color);
 }
 
 
 /*--------Section 7 - Footer--------*/
 
 .section-7 {
-    background-color: #007bff;
     position: relative;
+    background-color: #007bff;
 }
 
 .sec-7-social {
@@ -440,33 +440,33 @@ body {
 }
 
 .sec-7-social a {
-    color: #fff;
     font-size: 30px;
+    color: #fff;
 }
 
 .sec-7-copyright {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0);
     color: #000;
+    transform: translate(-50%, 0);
 }
 
 
 /*--------Loader--------*/
 
 .loader-wrapper {
-    height: 100hv;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    height: 100hv;
+    width: 100%;
     background-color: #007bff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 999;
     display: none;
 }
@@ -481,10 +481,10 @@ body {
 }
 
 .loader-inner {
-    vertical-align: top;
     display: inline-block;
     width: 100%;
     background-color: #fff;
+    vertical-align: top;
     animation: loader-inner 2s infinite ease-in;
 }
 
@@ -545,12 +545,12 @@ body {
 /*--------Darkmode switch--------*/
 
 .darkmode-switch {
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 12px;
     right: 30px;
     font-size: 24px;
-    display: flex;
-    align-items: center;
     z-index: 2;
 }
 
@@ -560,13 +560,13 @@ body {
 }
 
 .switch {
+    display: inline-block;
     height: 2.5em;
     width: 5em;
-    padding: 0;
     position: relative;
-    display: inline-block;
-    cursor: pointer;
     font-size: 10px;
+    cursor: pointer;
+    padding: 0;
 }
 
 .switch input {
@@ -600,6 +600,7 @@ body {
 /*--------Backtop btn--------*/
 
 .backtop {
+    display: none;
     position: fixed;
     right: 15px;
     bottom: 50px;
@@ -608,17 +609,16 @@ body {
     border-radius: 50%;
     background-color: #007bff;
     border: 1px solid #fff;
-    z-index: 3;
     transition: all ease 0.5s;
-    display: none;
+    z-index: 3;
 }
 
 .backtop i {
     font-size: 22px;
     color: #fff;
+    margin-top: 25%;
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-top: 25%;
     transition: all ease 0.3s;
 }
 
