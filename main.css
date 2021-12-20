@@ -29,7 +29,7 @@ body {
 
 .section {
     display: block;
-    padding: 6em 0;
+    padding: 5% 0;
     scroll-snap-align: start;
 }
 
@@ -171,7 +171,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2em;
 }
 
 .sec-text {
@@ -211,7 +210,7 @@ body {
 .sec-3-content {
     display: flex;
     justify-content: space-around;
-    padding: 3em 0;
+    padding: 3% 0;
 }
 
 .sec-3-item {
@@ -231,12 +230,12 @@ body {
     line-height: 50px;
     font-size: 30px;
     font-weight: 700;
-    padding: 0.75em 0;
+    padding: 1% 0;
 }
 
 .sec-3-item p {
     font-size: 22px;
-    line-height: 50px;
+    line-height: 30px;
     text-align: center;
 }
 
@@ -245,6 +244,10 @@ body {
 
 .sec-4-text::after {
     content: "Where I Am";
+}
+
+.sec-4-content {
+    padding: 5% 0;
 }
 
 .sec-4-map iframe {
@@ -268,7 +271,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    margin: 2em;
+    margin: 2%;
 }
 
 .sec-4-item a {
@@ -357,7 +360,7 @@ body {
 .sec-5-content {
     display: flex;
     justify-content: space-around;
-    padding: 3em 0;
+    padding: 3% 0;
 }
 
 .sec-5-item {
@@ -383,7 +386,7 @@ body {
 .sec-5-item p {
     font-size: 22px;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 
@@ -427,24 +430,24 @@ body {
 
 /*--------Section 7 - Footer--------*/
 
-.section-7 {
+.section-10 {
     position: relative;
     background-color: #007bff;
 }
 
-.sec-7-social {
+.sec-10-social {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
 }
 
-.sec-7-social a {
+.sec-10-social a {
     font-size: 30px;
     color: #fff;
 }
 
-.sec-7-copyright {
+.sec-10-copyright {
     position: absolute;
     bottom: 0;
     left: 50%;
