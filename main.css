@@ -185,7 +185,7 @@ body {
     margin: 1.25em 0.5em 0 0;
 }
 
-.load {
+.loadCV {
     background-color: #007bff;
     color: #000;
 }
@@ -286,9 +286,8 @@ body {
 }
 
 .sec-4-map iframe {
-    width: 95%;
-    height: 100%;
-    border: 2px solid #fff;
+    width: 100%;
+    height: 13em;
 }
 
 .sec-4-info {
@@ -359,7 +358,6 @@ body {
 .sec-4-btn {
     display: flex;
     justify-content: flex-end;
-    padding: 0!important;
 }
 
 .sec-4-btn button {
@@ -419,14 +417,10 @@ body {
 /*--------Section 6 - Review--------*/
 
 .sec-6-background {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    display: block;
     background-image: url(./assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    height: 100vh;
     /* filter: invert(15%) sepia(80%) saturate(3000%) hue-rotate(200deg) brightness(100%) contrast(100%); */
 }
 
@@ -444,7 +438,7 @@ body {
     color: #fff;
 }
 
-.sec-6-content-1 {
+.sec-6-content {
     padding-top: 5%;
 }
 
@@ -521,7 +515,7 @@ body {
     width: 100%;
 }
 
-.sec-6-content-2 {
+.sec-6-number {
     display: flex;
     align-items: center;
     width: 100%;
@@ -529,25 +523,24 @@ body {
     padding-top: 5%;
 }
 
-.sec-6-item-2 {
+.sec-6-number-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--second-color);
-    z-index: 1;
     color: #fff;
 }
 
-.sec-6-item-2 i {
+.sec-6-number-item i {
     font-size: 54px;
     color: #007bff;
 }
 
-.sec-6-item-2 span {
+.sec-6-number-item span {
     font-size: 30px;
 }
 
-.sec-6-item-2 h2 {
+.sec-6-number-item h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 50px;
