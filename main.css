@@ -12,6 +12,7 @@
     --first-color: #f9f9f9;
     --second-color: #000;
     --third-color: #fff;
+    --fourth-color: #fff;
 }
 
 .overlay {
@@ -31,6 +32,7 @@
     --first-color: #111111;
     --second-color: #fff;
     --third-color: #202020;
+    --fourth-color: #111111;
 }
 
 html,
@@ -52,6 +54,10 @@ body {
     margin: 0 auto;
 }
 
+.background-white {
+    background-color: var(--fourth-color);
+}
+
 
 /*--------Section 1 - Nav--------*/
 
@@ -69,10 +75,6 @@ body {
     transition: all ease 0.5s;
 }
 
-.navbar.active {
-    height: 60px;
-}
-
 #nav-menu {
     display: none;
     border: none;
@@ -88,12 +90,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-
-.nav-logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
 }
 
 .nav-brand img {
@@ -204,7 +200,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2%;
 }
 
 .sec-text {
@@ -219,9 +214,9 @@ body {
 .sec-text::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 50%;
-    width: 180px;
+    width: 100%;
     height: 3px;
     background: var(--second-color);
     transform: translateX(-50%);
@@ -229,7 +224,7 @@ body {
 
 .sec-text::after {
     position: absolute;
-    bottom: -8px;
+    bottom: -13px;
     left: 50%;
     font-size: 0.2em;
     color: var(--second-color);
@@ -278,116 +273,16 @@ body {
 /*--------Section 4 - Contact--------*/
 
 .sec-4-text::after {
-    content: "Where I Am";
-}
-
-.sec-4-content {
-    padding: 2% 0;
-}
-
-.sec-4-map iframe {
-    width: 100%;
-    height: 13em;
-}
-
-.sec-4-info {
-    margin: 10px 0;
-    color: var(--second-color);
-}
-
-.sec-4-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.sec-4-item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 2%;
-}
-
-.sec-4-item a {
-    color: var(--second-color);
-}
-
-.sec-4-item i {
-    font-size: 30px;
-    color: #007bff;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-}
-
-.sec-4-item p {
-    font-size: 24px;
-    padding: 0 8px;
-    position: relative;
-    display: inline-block;
-}
-
-.sec-4-form .row div {
-    padding: 2em 0;
-}
-
-.sec-4-form-1 {
-    padding-right: 2em !important;
-}
-
-.sec-4-form-2 {
-    padding-left: 2em !important;
-}
-
-.sec-4-form input {
-    width: 100%;
-    height: 50px;
-    font-size: 16px;
-    line-height: 1;
-    color: var(--second-color);
-    border: none;
-    border-bottom: 1px solid var(--second-color);
-    background: 0 0;
-}
-
-.form-control:focus {
-    border-bottom: 2px solid #007bff;
-    transition: all ease 0.3s;
-}
-
-.sec-4-btn {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.sec-4-btn button {
-    font-size: 16px;
-    font-weight: 500;
-    border: none;
-    color: var(--second-color);
-    background: none;
-}
-
-.sec-4-btn button:hover {
-    color: #007bff;
-    transition: all ease 0.3s;
-    cursor: pointer;
-}
-
-
-/*--------Section 5 - Contact--------*/
-
-.sec-5-text::after {
     content: "What I Can";
 }
 
-.sec-5-content {
+.sec-4-content {
     display: flex;
     justify-content: space-around;
     padding: 2% 0;
 }
 
-.sec-5-item {
+.sec-4-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,28 +290,97 @@ body {
     margin: 1.5em 0;
 }
 
-.sec-5-item i {
+.sec-4-item i {
     font-size: 54px;
     color: #007bff;
 }
 
-.sec-5-item h2 {
+.sec-4-item h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 50px;
     padding: 10px 0;
 }
 
-.sec-5-item p {
+.sec-4-item p {
     font-size: 22px;
     text-align: center;
     line-height: 30px;
 }
 
 
+/*--------Section 5 - Project--------*/
+
+.sec-5-text:after {
+    content: 'What I made';
+}
+
+.sec-5-content {
+    padding-top: 5%;
+}
+
+.sec-5-item {
+    position: relative;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
+    margin: 0.5em 0;
+    overflow: hidden;
+}
+
+.sec-5-item:hover .sec-5-bg {
+    left: 0%;
+}
+
+.thumnail {
+    color: #000;
+}
+
+.sec-5-bg {
+    display: flex;
+    position: absolute;
+    top: -15%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    color: #007bff;
+    font-size: 30px;
+    transition: transformY(-100%) 0.5s;
+}
+
+.sec-5-img {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.sec-5-img img {
+    width: 100%;
+}
+
+.sec-5-info {
+    display: flex;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 30%;
+    border-radius: 2px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /*--------Section 6 - Review--------*/
 
-.sec-6-background {
+.banner {
     background-image: url(./assets/img/banner.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -458,7 +422,7 @@ body {
     align-items: center;
     padding: 5%;
     background-color: #fff;
-    color: #636363;
+    color: #000;
     position: relative;
     transition: ease-in-out 2s;
 }
@@ -508,26 +472,22 @@ body {
     display: flex;
     justify-content: flex-end;
     order: 2;
-    z-index: 1;
+    height: 100%;
 }
 
 .sec-6-img img {
     width: 100%;
+    height: 100%;
 }
 
 .sec-6-number {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .sec-6-number-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--second-color);
     color: #fff;
 }
 
@@ -544,29 +504,182 @@ body {
     font-size: 30px;
     font-weight: 700;
     line-height: 50px;
-    padding: 10px 0;
 }
 
 
-/*--------Section 7 - Project--------*/
+/*--------Section 7 - Contact--------*/
 
-.sec-7-text:after {
-    content: 'What I made';
+.sec-7-text::after {
+    content: "Where I Am";
+    background: var(--fourth-color);
+}
+
+.sec-7-content {
+    padding: 2% 0;
+}
+
+.sec-7-map iframe {
+    width: 100%;
+    height: 13em;
 }
 
 .sec-7-list {
-    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--second-color);
 }
 
-.sec-7-item img {
+.sec-7-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 2%;
+}
+
+.sec-7-item a {
+    color: var(--second-color);
+}
+
+.sec-7-item i {
+    font-size: 30px;
+    color: #007bff;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+}
+
+.sec-7-item p {
+    font-size: 24px;
+    padding: 0 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.sec-7-form .row div {
+    padding: 2em 0;
+}
+
+.sec-7-form-1 {
+    padding-right: 2em !important;
+}
+
+.sec-7-form-2 {
+    padding-left: 2em !important;
+}
+
+.sec-7-form input {
     width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--second-color);
+    border: none;
+    border-bottom: 1px solid var(--second-color);
+    background: 0 0;
+}
+
+.form-control:focus {
+    border-bottom: 2px solid #007bff;
+    transition: all ease 0.3s;
+}
+
+.sec-7-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+.sec-7-btn button {
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: var(--second-color);
+    background: none;
+}
+
+.sec-7-btn button:hover {
+    color: #007bff;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+
+/*--------Section 8 - Blog--------*/
+
+.sec-8-text:before {
+    bottom: -10px;
+}
+
+.sec-8-text:after {
+    content: "What I Wrote";
+    bottom: -18px;
+    min-width: 5.6em;
+}
+
+.sec-8-item {
+    background: #f9f9f9;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
+    margin: 5% 0;
+}
+
+.sec-8-item .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.sec-8-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec-8-item .content {
+    padding: 5%;
+}
+
+.sec-8-item .link {
+    font-size: 20px;
+}
+
+.sec-8-item .link a {
+    color: #0052aa;
+}
+
+.sec-8-item .link span {
+    color: #000;
+}
+
+.sec-8-item h3 {
+    font-size: 30px;
+    color: #007bff;
+    line-height: 1.5;
+}
+
+.sec-8-item p {
+    font-size: 16px;
+    color: #000;
+    line-height: 2;
+}
+
+.sec-8-item .btn {
+    color: #0052aa;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 
 /*--------Section 9 - Quotes--------*/
 
 .section-9 {
-    background: linear-gradient(0deg, #007bff, var(--first-color));
+    background: linear-gradient(0deg, #007bff, var(--fourth-color));
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
 }
 
 .text {
@@ -788,15 +901,14 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #007bff;
-    border: 1px solid #fff;
+    background-color: #0052aa;
     transition: all ease-out 0.3s;
     z-index: 1;
     opacity: 0;
 }
 
 #to-top i {
-    font-size: 22px;
+    font-size: 24px;
     color: #fff;
     margin-top: 25%;
     margin-left: 50%;
