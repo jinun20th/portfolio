@@ -4,29 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta viewport="width=device-width, initial-scale=1">
-    <title>Jinun</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Jinun20th</title>
+    <link rel="icon" href="./assets/img/brand.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="main.js">
-    <link rel="stylesheet" href="smothscroll.js">
-    <link rel="stylesheet" href="./assets/img/">
-    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class>
+<body>
     <div id="preload"></div>
+
+    <div class="overlay"></div>
+
     <div class="main">
+
         <!-- Header -->
-        <header class="section-1 scroll">
+
+        <header class="section-1">
             <nav class="navbar">
-                <button class="nav-menu"></button>
                 <div class="nav-brand">
                     <span class="nav-icon"></span>
-                    <img class="nav-logo" src="./assets/img/logo.jpg"></img>
+                    <img src="./assets/img/brand.png"></img>
                     <div class="nav-text">
                         Jinun<span>20th</span>
                     </div>
@@ -45,61 +57,69 @@
                         <a href="#service">Service</a>
                     </li>
                 </ul>
+                <div id="nav-menu" class="fa fa-bars"></div>
             </nav>
         </header>
+        <div class="nav-container"></div>
+
         <!-- Home -->
-        <div class="section-2 scroll" id="home">
+
+        <div class="section-2" id="home">
             <div class="container">
                 <div class="sec-2-content">
                     <div class="sec-2-text-1">
                         I'm
+                        <br>
                         <span class="sec-2-input"></span>
                     </div>
                     <div class="sec-2-text-2">
-                        You can reach out to me if you need any help<br> in making a website for your business.
+                        You can reach out to me if you need any help<br class="responsive-text"> in making a website for your business.
                     </div>
-                    <button class="sec-2-btn open-chat">TALK TO ME</button>
-                    <button class="sec-2-btn load">VIEW MY PROFILE</button>
+                    <div class="row">
+                        <button class="sec-2-btn open-chat col p-12 m-4 c-3">TALK TO ME</button>
+                        <button class="sec-2-btn load col p-12 m-4 c-3">VIEW MY PROFILE</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- About -->
-        <div class="section section-3 scroll" id="about">
-            <div class="container">
 
+        <!-- About -->
+
+        <div class="section section-3" id="about">
+            <div class="container">
                 <div class="sec-header">
-                    <div class="sec-text sec-3-text">
+                    <div data-aos="fade-up" class="sec-text sec-3-text">
                         About
                     </div>
                 </div>
                 <div class="sec-3-content row">
-                    <div class="sec-3-item c-4 c-4">
+                    <div data-aos="fade-right" data-aos-delay="100" class="sec-3-item col p-6 m-4 c-4">
                         <i class="fa fa-code"></i>
                         <h2>Web Design</h2>
                         <p>I'm currently learning HTML, CSS, JavaScript and React components.</p>
                     </div>
-                    <div class="sec-3-item c-4">
+                    <div data-aos="fade-up" data-aos-delay="200" class="sec-3-item col p-6 m-4 c-4">
+                        <i class="fa fa-bitcoin"></i>
+                        <h2>Block Chain</h2>
+                        <p>I have learn blockchain enough to understand it.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="300" class="sec-3-item col p-6 m-4 c-4">
                         <i class="fa fa-globe"></i>
                         <h2>Contact</h2>
                         <p>You can find me in Ho Chi Minh city in VietNam.You can contact me online with this handle or email.
                         </p>
                     </div>
-                    <div class="sec-3-item c-4">
+                    <div data-aos="fade-right" data-aos-delay="100" class="sec-3-item col p-6 m-4 c-4">
                         <i class="fa fa-graduation-cap"></i>
                         <h2>Education</h2>
                         <p>I'm a second year student at University Information Technology.I currently studying Faculty Information System.</p>
                     </div>
-                    <div class="sec-3-item c-4">
-                        <i class="fa fa-css3"></i>
-                        <h2>Block Chain</h2>
-                        <p>I have learn blockchain enough to understand it.</p>
-                    </div>
-                    <div class="sec-3-item c-4">
+                    <div data-aos="fade-up" data-aos-delay="200" class="sec-3-item col p-6 m-4 c-4">
                         <i class="fa fa-briefcase"></i>
                         <h2>Experience</h2>
                         <p>I don't have much experience but with my spirit i can learn about.</p>
                     </div>
-                    <div class="sec-3-item c-4">
+                    <div data-aos="fade-left" data-aos-delay="300" class="sec-3-item col p-6 m-4 c-4">
                         <i class="fa fa-language"></i>
                         <h2>Language</h2>
                         <p>I can speak 3 different languages. They are English, French and Vietnamese.</p>
@@ -107,21 +127,23 @@
                 </div>
             </div>
         </div>
+
         <!-- Contact -->
-        <div class="section section-4 scroll" id="contact">
+
+        <div class="section section-4" id="contact">
             <div class="container">
                 <div class="sec-header">
-                    <div class="sec-text sec-4-text">
+                    <div data-aos="fade-up" class="sec-text sec-4-text">
                         Contact
                     </div>
                 </div>
                 <div class="sec-4-content row">
-                    <div class="sec-4-map c-6">
+                    <div data-aos="fade-right" class="sec-4-map col p-12 m-12 c-6">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6191.720998258979!2d105.76766701502987!3d10.032986699674831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0881792eeb09b%3A0x44438ff5102c4bd6!2zS8O9IHTDumMgeMOhIEtodSBB!5e0!3m2!1svi!2s!4v1639539362104!5m2!1svi!2s"
                             allowfullscreen="true" loading="lazy"></iframe>
                     </div>
-                    <div class="sec-4-info c-6">
-                        <ul class="sec-4-list">
+                    <div class="sec-4-info col p-12 m-12 c-6">
+                        <ul data-aos="fade-left" class="sec-4-list">
                             <li class="sec-4-item">
                                 <i class="fa fa-location-arrow"></i>
                                 <p>Address: KTX A HCM, VietNam</p>
@@ -144,76 +166,298 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="sec-4-form c-12">
+                    <form class="sec-4-form col p-12 m-12 c-12">
                         <div class="row">
-                            <div class="sec-4-form-1 c-6">
+                            <div data-aos="fade-up" class="sec-4-form-1 col p-12 m-6 c-6">
                                 <input type="text" class="form-control" placeholder="Name">
                             </div>
-                            <div class="sec-4-form-2 c-6">
+                            <div data-aos="fade-up" class="sec-4-form-2 col p-12 m-6 c-6">
                                 <input type="email" class="form-control" placeholder="Email">
                             </div>
-                            <div class="sec-4-form-3 c-12">
+                            <div data-aos="fade-up" class="sec-4-form-3 col p-12 m-12 c-12">
                                 <input type="text" class="form-control" placeholder="Messenger">
                             </div>
+                            <div data-aos="fade-up" class="sec-4-btn col p-12 m-12 c-12">
+                                <button>
+                                    SEND
+                                    <i class="fa fa-send"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="sec-4-btn c-12">
                     </form>
-                    <button>
-                        SEND
-                        <i class="fa fa-send"></i>
-                    </button>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- Serivce -->
-        <div class="section section-5 scroll" id="service">
-            <div class="container">
 
+        <!-- Serivce -->
+
+        <div class="section section-5" id="service">
+            <div class="container">
                 <div class="sec-header">
-                    <div class="sec-text sec-5-text">
+                    <div data-aos="fade-up" class="sec-text sec-5-text">
                         Service
                     </div>
                 </div>
                 <div class="sec-5-content row">
-                    <div class="sec-5-item c-6">
+                    <div data-aos="fade-right" class="sec-5-item col p-6 m-6 c-6">
                         <i class="fa fa-html5"></i>
                         <h2>Front-end</h2>
-                        <p>Modern and mobile-ready website that will help you<br> reach all of your marketing.</p>
+                        <p>Modern and mobile-ready website that will help you<br class="responsive-text"> reach all of your marketing.</p>
                     </div>
-                    <div class="sec-5-item c-6">
+                    <div data-aos="fade-left" class="sec-5-item col p-6 m-6 c-6">
                         <i class="fa fa-code"></i>
                         <h2>Back-end</h2>
-                        <p>UI/UX focus on the user, frontend focus on<br>the settings of the user and backend focus on the data.
+                        <p>UI/UX focus on the user, frontend focus on<br class="responsive-text">the settings of the user and backend focus on the data.
                         </p>
                     </div>
-                    <div class="sec-5-item c-6">
+                    <div data-aos="fade-right" class="sec-5-item col p-6 m-6 c-6">
                         <i class="fa fa-buysellads"></i>
                         <h2>Advertising</h2>
-                        <p>Advertising services include television, radio,<br> print, mail, and web apps.</p>
+                        <p>Advertising services include television, radio,<br class="responsive-text"> print, mail, and web apps.</p>
                     </div>
-                    <div class="sec-5-item c-6">
+                    <div data-aos="fade-left" class="sec-5-item col p-6 m-6 c-6">
                         <i class="fa fa-gamepad"></i>
-                        <h2>Game Development</h2>
-                        <p>Developing memorable and unique mobile <br>android, ios and video games.</p>
+                        <h2>Development</h2>
+                        <p>Developing memorable and unique mobile <br class="responsive-text">android, ios and video games.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Quotes -->
-        <div class="section section-6 scroll" id="quotes">
+
+        <!-- Review -->
+
+        <div class="section section-6" id="reivew">
+            <div class="sec-6-background"></div>
             <div class="container">
-                <div class="sec-6-quotes">
+                <div class="sec-header">
+                    <div data-aos="fade-up" class="sec-text sec-6-text">
+                        Reivew
+                    </div>
+                </div>
+                <div class="sec-6-content-1 row">
+                    <div data-aos="fade-up" class="sec-6-img col p-12 m-6 c-6">
+                        <img src="./assets/img/review.png"></img>
+                    </div>
+                    <div data-aos="fade-up" class="swiper sec-6-slider col p-12 m-6 c-6">
+                        <ul class="swiper-wrapper sec-6-list">
+                            <li class="swiper-slide sec-6-item">
+                                <div class="image">
+                                    <img src="./assets/img/logo.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="name">
+                                        Phan Công Thành
+                                    </h3>
+                                    <span class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <p class="context">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur voluptas similique iste nam eum aliquam, iure ut. Nisi ex cum officia id debitis aspernatur ratione veritatis quidem pariatur maiores.
+                                    </p>
+                                    <h4 class="job">CEO Shopee</h4>
+                                </div>
+                            </li>
+                            <li class="swiper-slide sec-6-item">
+                                <div class="image">
+                                    <img src="./assets/img/logo.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="name">
+                                        Phan Công Thành
+                                    </h3>
+                                    <span class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <p class="context">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur voluptas similique iste nam eum aliquam, iure ut. Nisi ex cum officia id debitis aspernatur ratione veritatis quidem pariatur maiores.
+                                    </p>
+                                    <h4 class="job">CEO Shopee</h4>
+                                </div>
+                            </li>
+                            <li class="swiper-slide sec-6-item">
+                                <div class="image">
+                                    <img src="./assets/img/logo.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="name">
+                                        Phan Công Thành
+                                    </h3>
+                                    <span class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <p class="context">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur voluptas similique iste nam eum aliquam, iure ut. Nisi ex cum officia id debitis aspernatur ratione veritatis quidem pariatur maiores.
+                                    </p>
+                                    <h4 class="job">CEO Shopee</h4>
+                                </div>
+                            </li>
+                            <li class="swiper-slide sec-6-item">
+                                <div class="image">
+                                    <img src="./assets/img/logo.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="name">
+                                        Phan Công Thành
+                                    </h3>
+                                    <span class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <p class="context">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur voluptas similique iste nam eum aliquam, iure ut. Nisi ex cum officia id debitis aspernatur ratione veritatis quidem pariatur maiores.
+                                    </p>
+                                    <h4 class="job">CEO Shopee</h4>
+                                </div>
+                            </li>
+                            <li class="swiper-slide sec-6-item">
+                                <div class="image">
+                                    <img src="./assets/img/logo.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="name">
+                                        Phan Công Thành
+                                    </h3>
+                                    <span class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <p class="context">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur voluptas similique iste nam eum aliquam, iure ut. Nisi ex cum officia id debitis aspernatur ratione veritatis quidem pariatur maiores.
+                                    </p>
+                                    <h4 class="job">CEO Shopee</h4>
+                                </div>
+                            </li>
+                            <li class="swiper-slide sec-6-item">
+                                <div class="image">
+                                    <img src="./assets/img/logo.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="name">
+                                        Phan Công Thành
+                                    </h3>
+                                    <span class="rate">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <p class="context">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur voluptas similique iste nam eum aliquam, iure ut. Nisi ex cum officia id debitis aspernatur ratione veritatis quidem pariatur maiores.
+                                    </p>
+                                    <h4 class="job">CEO Shopee</h4>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="sec-6-content-2 row">
+                    <div data-aos="fade-down" class="sec-6-item-2 col p-3 m-3 c-3">
+                        <i class="fa fa-user"></i>
+                        <span class="counter">142</span>
+                        <h2>Clients</h2>
+                    </div>
+                    <div data-aos="fade-down" class="sec-6-item-2 col p-3 m-3 c-3">
+                        <i class="fa fa-file"></i>
+                        <span class="counter">8</span>
+                        <h2>Projects</h2>
+                    </div>
+                    <div data-aos="fade-down" class="sec-6-item-2 col p-3 m-3 c-3">
+                        <i class="fa fa-history"></i>
+                        <span class="counter">1242</span>
+                        <h2>Hours</h2>
+                    </div>
+                    <div data-aos="fade-down" class="sec-6-item-2 col p-3 m-3 c-3">
+                        <i class="fa fa-trophy"></i>
+                        <span class="counter">3</span>
+                        <h2>Awards</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project -->
+
+        <div class="section section-7" id="project">
+            <div class="container">
+                <div class="sec-header">
+                    <div class="sec-text sec-7-text">
+                        Project
+                    </div>
+                </div>
+                <div class="swiper sec-7-slider">
+                    <div class="swiper-wrapper sec-7-list">
+                        <div class="swiper-slide sec-7-item">
+                            <img src="./assets/img/project3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide sec-7-item">
+                            <img src="./assets/img/project3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide sec-7-item">
+                            <img src="./assets/img/project3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide sec-7-item">
+                            <img src="./assets/img/project3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide sec-7-item">
+                            <img src="./assets/img/project3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide sec-7-item">
+                            <img src="./assets/img/project3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide sec-7-item">
+                            <img src="./assets/img/project3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide sec-7-item">
+                            <img src="./assets/img/project3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog -->
+
+        <div class="section section-8" style="display: none" id="blog"></div>
+
+        <!-- Quotes -->
+
+        <div class="section section-9" id="quotes">
+            <div class="container">
+                <div data-aos="zoom-in" class="sec-9-quotes">
                     <div class="text">
-                        <p>"Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will?"</p>
+                        <p>"Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will?"
+                        </p>
                     </div>
                     <div class="user">
-                        <img class="nav-logo" src="./assets/img/logo.jpg"></img>
-                        <div class="info">
-                            <div class="name">
+                        <img data-aos="zoom-out" class="nav-logo" src="./assets/img/logo.jpg"></img>
+                        <div data-aos="zoom-out" class="info">
+                            <div data-aos="zoom-out" class="name">
                                 Jinun20th
                             </div>
-                            <div class="work">
+                            <div data-aos="zoom-out" class="work">
                                 Web Developer
                             </div>
                         </div>
@@ -222,23 +466,21 @@
             </div>
         </div>
 
-        <div class="section section-7 scroll" style="display: none" id="client"></div>
-        <div class="section section-8 scroll" style="display: none" id="reivew"></div>
-        <div class="section section-9 scroll" style="display: none" id="project"></div>
         <!-- Footer -->
-        <footer class="section section-10 scroll">
+
+        <footer class="section section-10">
             <div class="container">
                 <div class="sec-10-social">
-                    <a href="">
+                    <a data-aos="fade-down" href="#">
                         <i class="fa fa-facebook"></i>
                     </a>
-                    <a href="">
+                    <a data-aos="fade-down" href="#">
                         <i class="fa fa-google"></i>
                     </a>
-                    <a href="">
+                    <a data-aos="fade-down" href="#">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a href="">
+                    <a data-aos="fade-down" href="#">
                         <i class="fa fa-github"></i>
                     </a>
                 </div>
@@ -247,39 +489,39 @@
                 </div>
             </div>
         </footer>
+
         <!-- Loader - HTML -->
+
         <div class="loader-wrapper">
             <span class="loader"><span class="loader-inner"></span>
         </div>
-        <!-- Btn back top - HTML -->
-        <a href="#" class="backtop">
+
+        <!-- Btn to top - HTML -->
+
+        <a href="#" id="to-top">
             <i class="fa fa-angle-up"></i>
         </a>
-        <!-- Darkmode - HTML -->
-        <div class="darkmode-switch">
-            <span>Light</span>
-            <label for="toggle" class="switch">
-            <input type="checkbox" id="toggle" name=toggle-darkmode>
-            <div></div>
-        </label>
-            <span>Dark</span>
-        </div>
-        <!-- Loader -->
-        <!-- <script>
-            $(window).on("load", function () {
-                $(".loader-wrapper").fadeOut("slow");
-            });
-        </script> 
-        <script>
-            var loader = document.getElementById("preload");
-            window.addEventListener("load", function () {
-                loader.style.display = "none";
-            })
-        </script>-->
-        <!-- Back top  -->
-        <script>
-            const backtop = document.querySelector(".backtop");
 
+        <!-- Darkmode - HTML -->
+
+        <div class="darkmode-switch">
+            <span>
+                <i class="fa fa-sun-o"></i>
+            </span>
+            <label for="toggle" class="switch">
+                <input type="checkbox" id="toggle" name=toggle-darkmode>
+                <div></div>
+            </label>
+            <span>
+                <i class="fa fa-moon-o"></i>
+            </span>
+        </div>
+        </script>
+
+        <!-- To top - Script -->
+
+        <script>
+            var backtop = document.getElementById("to-top");
             window.addEventListener("scroll", () => {
                 if (window.pageYOffset > 100) {
                     backtop.classList.add("active");
@@ -288,15 +530,18 @@
                 }
             })
         </script>
-        <!-- Darkmode  -->
+
+        <!-- Darkmode - Script -->
+
         <script>
-            const checkbox = document.getElementById('toggle');
+            var checkbox = document.getElementById('toggle');
             checkbox.addEventListener('change', () => {
                 document.body.classList.toggle('dark-theme');
             })
         </script>
-        <!-- Typer -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!-- Typer - Script -->
+
         <script>
             var typed = new Typed(".sec-2-input", {
                 strings: ["Jinun20th", "Web Developer"],
@@ -305,7 +550,101 @@
                 loop: true,
             });
         </script>
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+        <!-- CounterUp - Script -->
+
+        <script>
+            $(document).ready(function() {
+                $('span.counter').counterUp({
+                    delay: 10,
+                    time: 800,
+                });
+            });
+        </script>
+
+        <!-- Animate On Scroll - Script -->
+
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                easing: 'ease-out-back',
+                offset: 100,
+                duration: 800,
+            });
+        </script>
+
+        <!--Start of Tawk.to Script-->
+
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function() {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/61c838e6c82c976b71c38d28/1fnr1si3c';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+
+        <!--End of Tawk.to Script-->
+
+        <!-- Swiper -->
+        <script>
+            var swiper = new Swiper(".sec-6-slider", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+        <script>
+            var swiper = new Swiper(".sec-7-slider", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <!-- Main js -->
+
+        <script>
+            var menu = document.querySelector('#nav-menu');
+            var narbar = document.querySelector('.nav-list');
+            var dark = document.querySelector('.darkmode-switch');
+            var background = document.querySelector('.nav-container');
+            var overlay = document.querySelector('.overlay');
+            var i = 0;
+
+            menu.onclick = () => {
+                menu.classList.toggle('fa-times');
+                menu.classList.toggle('fa-bars');
+                i += 1;
+                if (i % 2 == 1) {
+                    narbar.style.right = '-1em';
+                    dark.style.right = '0em';
+                    background.style.right = '0px';
+                    overlay.style.display = 'block';
+                } else {
+                    narbar.style.right = "-10em";
+                    dark.style.right = '-10em';
+                    background.style.right = '-10em';
+                    overlay.style.display = 'none';
+                }
+            }
+
+            overlay.onclick = () => {
+                narbar.style.right = "-10em";
+                dark.style.right = '-10em';
+                background.style.right = '-10em';
+                overlay.style.display = 'none';
+                menu.classList.remove('fa-times');
+                menu.classList.add('fa-bars');
+                i += 1;
+            }
+        </script>
     </div>
 </body>
 

@@ -1,0 +1,129 @@
+/*  PC medium resolution and bigger */
+
+@media (min-width: 1130px) {}
+
+
+/*  PC low resolution */
+
+@media (min-width: 1048px) and (max-width: 1239px) {
+    .navbar {
+        padding: 0 15%;
+    }
+    .container {
+        padding: 0 15%;
+    }
+}
+
+
+/*  Tablet to PC low resolution */
+
+@media (min-width: 991px) and (max-width: 1048px) {
+    .navbar {
+        padding: 0 13%;
+    }
+    .container {
+        padding: 0 13%;
+    }
+    .darkmode-switch {
+        right: 0;
+    }
+}
+
+
+/* Tablet */
+
+@media (max-width: 991px) {
+    .navbar {
+        padding: 0 13%;
+    }
+    .container {
+        padding: 0 13%;
+    }
+    .nav-list {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        right: -10em;
+        top: 3em;
+    }
+    #nav-menu {
+        display: block;
+    }
+    .sec-2-text-1 {
+        font-size: 4em;
+    }
+    .sec-2-text-2 {
+        font-size: 1.8em;
+    }
+    .darkmode-switch {
+        display: flex;
+        top: 12em;
+        right: -10em;
+        transition: all ease .2s;
+    }
+}
+
+
+/* Phone */
+
+@media (max-width: 768px) {
+    .nav-brand img {
+        width: 48px;
+        height: 48px;
+    }
+    .container {
+        overflow: hidden;
+    }
+    h2 {
+        text-align: center;
+    }
+    .nav-container {
+        position: fixed;
+        width: 20%;
+        height: 100%;
+        background: var(--third-color);
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+        top: 0;
+        right: -10em;
+        z-index: 3;
+    }
+    .sec-2-text-1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+    .sec-2-text-1>br {
+        display: block;
+    }
+    .sec-2-text-2 {
+        font-size: 1.2em;
+    }
+    .sec-2-btn {
+        padding: 0.75em 0;
+    }
+    .responsive-text {
+        display: none;
+    }
+    .sec-text {
+        font-size: 3em;
+    }
+    .sec-text::before {
+        width: 100%;
+    }
+    .sec-text::after {
+        bottom: -5px;
+    }
+    .sec-4-form-1 {
+        padding-right: 0!important;
+    }
+    .sec-4-form-2 {
+        padding-left: 0!important;
+    }
+    .sec-6-img {
+        order: 0;
+    }
+    .darkmode-switch span {
+        font-size: 16px;
+        padding: 0;
+    }
+}
