@@ -45,7 +45,7 @@ body {
 
 .section {
     display: block;
-    padding: 6% 0;
+    padding: 5% 0;
 }
 
 .container {
@@ -69,6 +69,7 @@ body {
     height: 64px;
     background-color: var(--third-color);
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
     position: fixed;
     z-index: 4;
     padding: 0 20%;
@@ -113,7 +114,7 @@ body {
 
 .nav-list li {
     display: inline-block;
-    margin: 1em;
+    margin: 0.5em;
 }
 
 .nav-list li a {
@@ -171,7 +172,7 @@ body {
 }
 
 .sec-2-btn {
-    min-width: 16em;
+    width: 100%;
     font-size: 16px;
     font-weight: 500;
     color: #007bff;
@@ -183,7 +184,7 @@ body {
 
 .loadCV {
     background-color: #007bff;
-    color: #000;
+    color: #fff;
 }
 
 .sec-2-btn:hover {
@@ -316,7 +317,7 @@ body {
 }
 
 .sec-5-content {
-    padding-top: 5%;
+    padding: 2% 0;
 }
 
 .sec-5-item {
@@ -384,6 +385,7 @@ body {
     background-image: url(./assets/img/banner.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     width: 100%;
     /* filter: invert(15%) sepia(80%) saturate(3000%) hue-rotate(200deg) brightness(100%) contrast(100%); */
 }
@@ -403,7 +405,7 @@ body {
 }
 
 .sec-6-content {
-    padding-top: 5%;
+    padding: 2% 0;
 }
 
 .sec-6-slider {
@@ -492,16 +494,16 @@ body {
 }
 
 .sec-6-number-item i {
-    font-size: 54px;
+    font-size: 50px;
     color: #007bff;
 }
 
 .sec-6-number-item span {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .sec-6-number-item h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 50px;
 }
@@ -542,11 +544,10 @@ body {
 }
 
 .sec-7-item i {
-    font-size: 30px;
+    font-size: 24px;
     color: #007bff;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
+    width: 24px;
+    height: 24px;
 }
 
 .sec-7-item p {
@@ -557,26 +558,22 @@ body {
 }
 
 .sec-7-form .row div {
-    padding: 2em 0;
-}
-
-.sec-7-form-1 {
-    padding-right: 2em !important;
-}
-
-.sec-7-form-2 {
-    padding-left: 2em !important;
+    padding: 0 0.2em;
 }
 
 .sec-7-form input {
     width: 100%;
-    height: 50px;
+    height: 70px;
     font-size: 16px;
     line-height: 1;
     color: var(--second-color);
     border: none;
     border-bottom: 1px solid var(--second-color);
     background: 0 0;
+}
+
+.sec-7-form-text input {
+    height: 100px;
 }
 
 .form-control:focus {
@@ -654,13 +651,15 @@ body {
 .sec-8-item h3 {
     font-size: 30px;
     color: #007bff;
-    line-height: 1.5;
+    line-height: 1;
+    text-align: center;
 }
 
 .sec-8-item p {
     font-size: 16px;
     color: #000;
-    line-height: 2;
+    line-height: 1.5;
+    text-align: start;
 }
 
 .sec-8-item .btn {
@@ -730,6 +729,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
+    padding-bottom: 5%;
 }
 
 .sec-10-social a {
@@ -738,11 +738,11 @@ body {
 }
 
 .sec-10-copyright {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+    display: flex;
     color: #fff;
-    transform: translate(-50%, 0);
+    font-size: 16px;
+    justify-content: center;
+    padding-top: 5%;
 }
 
 

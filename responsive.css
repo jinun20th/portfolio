@@ -1,23 +1,128 @@
-/*  PC medium resolution and bigger */
-
-@media (min-width: 1130px) {}
-
-
 /*  PC low resolution */
 
-@media (max-width: 1200px) {}
+@media (max-width: 1432px) {
+    .navbar,
+    .container {
+        padding: 0 18%;
+    }
+}
+
+@media(max-width:1342px) {
+    .navbar,
+    .container {
+        padding: 0 15%;
+    }
+}
 
 
 /*  Mobile & Tablet */
 
-@media (max-width: 1023px) {}
+@media (max-width: 1227px) {
+    .nav-list {
+        position: fixed;
+        top: 64px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--fourth-color);
+        text-align: center;
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
+        transition: all ease-out 0.3s;
+    }
+    .nav-list li {
+        display: block;
+        margin: 3em;
+    }
+    #nav-menu {
+        display: block
+    }
+    .sec-7-item i,
+    .sec-7-item p {
+        font-size: 1.4em;
+    }
+    .sec-7-form input,
+    .sec-7-form-text input {
+        height: 50px;
+    }
+    .darkmode-switch {
+        right: -100%;
+        top: 110px;
+        transition: all ease-out 0.3s;
+    }
+}
 
 
 /* Tablet */
 
-@media (min-width: 740px) and (max-width: 1023px) {}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .responsive-text {
+        display: none;
+    }
+    .sec-2-text-1 {
+        text-align: center;
+        font-size: 4em;
+    }
+    .sec-2-text-2 {
+        font-size: 1.9em;
+    }
+    .sec-7-item i,
+    .sec-7-item p {
+        font-size: 1.1em;
+    }
+}
 
 
-/* Mobile */
+/* Mobile Medium*/
 
-@media (max-width: 740px) {}
+@media (max-width: 740px) {
+    .navbar,
+    .container {
+        padding: 0 10%;
+    }
+    .responsive-text {
+        display: none;
+    }
+    .sec-2-text-1 {
+        text-align: center;
+        font-size: 3em;
+    }
+    .sec-2-text-2 {
+        font-size: 1.5em;
+    }
+    .sec-3-content,
+    .sec-4-content,
+    .sec-5-content,
+    .sec-6-content,
+    .sec-7-content {
+        padding: 5% 0;
+    }
+    .sec-10-social i,
+    .sec-10-social a {
+        font-size: 1.2em;
+    }
+    .sec-10-copyright {
+        font-size: 13px;
+    }
+}
+
+
+/* Mobile Small */
+
+@media (max-width: 540px) {
+    .navbar,
+    .container {
+        padding: 0 5%;
+    }
+    .sec-2-text-1 {
+        font-size: 2.3em;
+    }
+    .sec-3-item h2 {
+        text-align: center;
+    }
+    .sec-7-item p {
+        font-size: 1.3em;
+    }
+    .sec-8-item {
+        margin: 7% 0;
+    }
+}
