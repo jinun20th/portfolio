@@ -1,6 +1,5 @@
 var menu = document.querySelector('#nav-menu');
 var navbar = document.querySelector('.nav-list');
-var dark = document.querySelector('.darkmode-switch');
 var i = 0;
 
 menu.onclick = () => {
@@ -9,10 +8,8 @@ menu.onclick = () => {
     i += 1;
     if (i % 2 == 1) {
         navbar.style.left = '0';
-        dark.style.right = '1em';
     } else {
         navbar.style.left = '-100%';
-        dark.style.right = '-100%';
     }
 }
 
@@ -46,7 +43,13 @@ window.addEventListener("scroll", () => {
 var checkbox = document.getElementById('toggle');
 checkbox.addEventListener('change', () => {
     document.body.classList.toggle('dark-theme');
-})
+});
+
+var dark = document.querySelector('#darkmode-btn');
+dark.onclick = () => {
+    dark.classList.toggle('fa-moon-o');
+    document.body.classList.toggle('dark-theme');
+};
 
 /* Typer - Script/* */
 
