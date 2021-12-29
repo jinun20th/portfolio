@@ -170,10 +170,12 @@
         font-size: 2em;
     }
     .sec-5-info h3,
-    .sec-5-info p,
     .info .name,
     .info .work {
         font-size: 0.8em!important;
+    }
+    .sec-5-info p {
+        font-size: 0.75em!important;
     }
     .sec-8-item {
         margin-top: 5%;
