@@ -169,10 +169,6 @@ body {
     line-height: 1;
 }
 
-.sec-2-text-1>br {
-    display: none;
-}
-
 .sec-2-input {
     color: #007bff;
 }
@@ -464,10 +460,6 @@ body {
     font-size: 1.8em;
     font-weight: 700;
     line-height: 1;
-}
-
-.sec-6-item span {
-    padding-bottom: 3%;
 }
 
 .sec-6-item .rate i {
