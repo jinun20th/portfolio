@@ -21,7 +21,7 @@ function CloseMenu() {
     i = 0;
 }
 
-var item = document.getElementsByClassName('nav-item');
+var item = document.getElementsByClassName('sec-1__nav-item');
 for (var k = 0; k < item.length; k++) {
     item[k].addEventListener('click', CloseMenu, false);
 }
@@ -53,7 +53,7 @@ dark.onclick = () => {
 
 /* Typer - Script/* */
 
-var typed = new Typed(".sec-2-input", {
+var typed = new Typed(".sec-2__input", {
     strings: ["Jinun20th", "Web Developer"],
     typeSpeed: 100,
     backSpeed: 100,
@@ -104,7 +104,7 @@ var Tawk_API = Tawk_API || {},
 /* Swiper */
 
 
-var swiper = new Swiper(".sec-6-slider", {
+var swiper = new Swiper(".sec-6__slider", {
     spaceBetween: 50,
     grabCursor: true,
     autoplay: {
@@ -119,7 +119,7 @@ var swiper = new Swiper(".sec-6-slider", {
 });
 
 
-var swiper = new Swiper(".sec-8-slider", {
+var swiper = new Swiper(".sec-8__slider", {
     spaceBetween: 20,
     grabCursor: true,
     loop: true,

@@ -1,14 +1,14 @@
 /*  PC low resolution */
 
 @media (max-width: 1432px) {
-    .navbar,
+    .sec-1__navbar,
     .container {
         padding: 0 18%;
     }
 }
 
 @media(max-width:1342px) {
-    .navbar,
+    .sec-1__navbar,
     .container {
         padding: 0 15%;
     }
@@ -18,7 +18,7 @@
 /*  Mobile & Tablet */
 
 @media (max-width: 1227px) {
-    .nav-list {
+    .sec-1__nav-list {
         position: fixed;
         top: 64px;
         left: -100%;
@@ -29,7 +29,7 @@
         box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
         transition: all ease-out 0.3s;
     }
-    .nav-list li {
+    .sec-1__nav-list li {
         display: block;
         margin: 3em;
     }
@@ -37,12 +37,12 @@
     #darkmode-btn {
         display: block
     }
-    .sec-7-item i,
-    .sec-7-item p {
+    .sec-7__item i,
+    .sec-7__item p {
         font-size: 1.4em;
     }
-    .sec-7-form input,
-    .sec-7-form-text input {
+    .sec-7__form input,
+    .sec-7__form-text input {
         height: 50px;
     }
     .darkmode-switch {
@@ -60,15 +60,15 @@
     h3 {
         font-size: 1.1em!important;
     }
-    .sec-2-text-1 {
+    .sec-2__text-1 {
         text-align: center;
         font-size: 4em;
     }
-    .sec-2-text-2 {
+    .sec-2__text-2 {
         font-size: 1.9em;
     }
-    .sec-7-item i,
-    .sec-7-item p {
+    .sec-7__item i,
+    .sec-7__item p {
         font-size: 1.1em;
     }
 }
@@ -77,7 +77,7 @@
 /* Mobile Medium*/
 
 @media (max-width: 740px) {
-    .navbar,
+    .sec-1__navbar,
     .container {
         padding: 0 10%;
     }
@@ -93,30 +93,30 @@
     p {
         font-size: 1.2em!important;
     }
-    .nav-brand img,
+    .sec-1__nav-brand img,
     .logo,
     #to-top {
         width: 48px;
         height: 48px;
     }
-    .sec-2-text-1 {
+    .sec-2__text-1 {
         font-size: 2em;
     }
-    .sec-3-item h2 {
+    .sec-3__item h2 {
         text-align: center;
     }
-    .sec-3-item i,
-    .sec-4-item i {
+    .sec-3__item i,
+    .sec-4__item i {
         font-size: 2.5em;
     }
-    .sec-5-info h3 {
+    .sec-5__info h3 {
         font-size: 1.5em!important;
     }
-    .sec-2-text-1 {
+    .sec-2__text-1 {
         text-align: center;
         font-size: 3em;
     }
-    .sec-2-text-2 {
+    .sec-2__text-2 {
         font-size: 1.5em;
     }
     .sec-text {
@@ -126,18 +126,18 @@
     .sec-text::after {
         display: none;
     }
-    .sec-3-content,
-    .sec-4-content,
-    .sec-5-content,
-    .sec-6-content,
-    .sec-7-content {
+    .sec-3__content,
+    .sec-4__content,
+    .sec-5__content,
+    .sec-6__content,
+    .sec-7__content {
         padding: 5% 0;
     }
-    .sec-10-social i,
-    .sec-10-social a {
+    .sec-10__social i,
+    .sec-10__social a {
         font-size: 1.2em;
     }
-    .sec-10-copyright {
+    .sec-10__copyright {
         font-size: 13px;
     }
 }
@@ -146,7 +146,7 @@
 /* Mobile Small */
 
 @media (max-width: 540px) {
-    .navbar,
+    .sec-1__navbar,
     .container {
         padding: 0 8%;
     }
@@ -159,25 +159,25 @@
     p {
         font-size: 1em!important;
     }
-    .sec-2-text-1 {
+    .sec-2__text-1 {
         font-size: 2em;
     }
-    .sec-3-item h2 {
+    .sec-3__item h2 {
         text-align: center;
     }
-    .sec-3-item i,
-    .sec-4-item i {
+    .sec-3__item i,
+    .sec-4__item i {
         font-size: 2em;
     }
-    .sec-5-info h3,
+    .sec-5__info h3,
     .info .name,
     .info .work {
         font-size: 0.8em!important;
     }
-    .sec-5-info p {
+    .sec-5__info p {
         font-size: 0.75em!important;
     }
-    .sec-8-item {
+    .sec-8__item {
         margin-top: 5%;
         margin-bottom: 10%;
     }

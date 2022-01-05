@@ -65,7 +65,7 @@ body {
 
 /*--------Section 1 - Nav--------*/
 
-.navbar {
+.sec-1__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,19 +98,19 @@ body {
     color: #007bff;
 }
 
-.nav-brand {
+.sec-1__nav-brand {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.nav-brand img {
+.sec-1__nav-brand img {
     width: 60px;
     height: 60px;
     filter: hue-rotate(200deg);
 }
 
-.nav-text {
+.sec-1__nav-text {
     font-size: 1.5em;
     line-height: 1.5;
     font-weight: 700;
@@ -119,16 +119,16 @@ body {
     color: var(--second-color);
 }
 
-.nav-text span {
+.sec-1__nav-text span {
     color: #007bff;
 }
 
-.nav-list li {
+.sec-1__nav-list li {
     display: inline-block;
     margin: 0.5em;
 }
 
-.nav-list li a {
+.sec-1__nav-list li a {
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1;
@@ -136,7 +136,7 @@ body {
     transition: width 0.2s ease-out, background-color .2s ease-out;
 }
 
-.nav-list li a:hover {
+.sec-1__nav-list li a:hover {
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1;
@@ -159,27 +159,27 @@ body {
     align-items: center;
 }
 
-.sec-2-content {
+.sec-2__content {
     color: #fff;
 }
 
-.sec-2-text-1 {
+.sec-2__text-1 {
     font-size: 4.5em;
     font-weight: 700;
     line-height: 1;
 }
 
-.sec-2-input {
+.sec-2__input {
     color: #007bff;
 }
 
-.sec-2-text-2 {
+.sec-2__text-2 {
     font-size: 1.8em;
     font-weight: 500;
     line-height: 1;
 }
 
-.sec-2-btn {
+.sec-2__btn {
     width: 100%;
     font-size: 1em;
     font-weight: 500;
@@ -190,12 +190,15 @@ body {
     margin: 1.25em 0.5em 0 0;
 }
 
-.loadCV {
-    background-color: #007bff;
+.--color-white {
     color: #fff;
 }
 
-.sec-2-btn:hover {
+.--bg-blue {
+    background-color: #007bff;
+}
+
+.sec-2__btn:hover {
     background-color: transparent;
     color: #007bff;
     cursor: pointer;
@@ -242,17 +245,17 @@ body {
     transform: translateX(-50%);
 }
 
-.sec-3-text::after {
+.sec-3__text::after {
     content: "Who I Am";
 }
 
-.sec-3-content {
+.sec-3__content {
     display: flex;
     justify-content: space-around;
     padding: 2% 0;
 }
 
-.sec-3-item {
+.sec-3__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,19 +263,19 @@ body {
     margin: 1.5em 0;
 }
 
-.sec-3-item i {
+.sec-3__item i {
     font-size: 3.5em;
     color: #007bff;
 }
 
-.sec-3-item h2 {
+.sec-3__item h2 {
     line-height: 50px;
     font-size: 1.8em;
     font-weight: 700;
     padding: 1% 0;
 }
 
-.sec-3-item p {
+.sec-3__item p {
     font-size: 1.5em;
     line-height: 30px;
     text-align: center;
@@ -281,17 +284,17 @@ body {
 
 /*--------Section 4 - Contact--------*/
 
-.sec-4-text::after {
+.sec-4__text::after {
     content: "What I Can";
 }
 
-.sec-4-content {
+.sec-4__content {
     display: flex;
     justify-content: space-around;
     padding: 2% 0;
 }
 
-.sec-4-item {
+.sec-4__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,19 +302,19 @@ body {
     margin: 1.5em 0;
 }
 
-.sec-4-item i {
+.sec-4__item i {
     font-size: 3.5em;
     color: #007bff;
 }
 
-.sec-4-item h2 {
+.sec-4__item h2 {
     font-size: 1.8em;
     font-weight: 700;
     line-height: 50px;
     padding: 10px 0;
 }
 
-.sec-4-item p {
+.sec-4__item p {
     font-size: 1.5em;
     text-align: center;
     line-height: 30px;
@@ -320,22 +323,22 @@ body {
 
 /*--------Section 5 - Project--------*/
 
-.sec-5-text:after {
+.sec-5__text:after {
     content: 'What I made';
 }
 
-.sec-5-content {
+.sec-5__content {
     padding: 2% 0;
 }
 
-.sec-5-item {
+.sec-5__item {
     position: relative;
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
     margin: 0.5em 0;
     overflow: hidden;
 }
 
-.sec-5-item:hover .sec-5-bg {
+.sec-5__item:hover .sec-5__bg {
     left: 0%;
 }
 
@@ -343,7 +346,7 @@ body {
     color: #000;
 }
 
-.sec-5-bg {
+.sec-5__bg {
     display: flex;
     position: absolute;
     top: -15%;
@@ -358,7 +361,7 @@ body {
     transition: transformY(-100%) 0.5s;
 }
 
-.sec-5-img {
+.sec-5__img {
     width: 100%;
     height: 250px;
     display: flex;
@@ -367,11 +370,11 @@ body {
     margin-bottom: 3%;
 }
 
-.sec-5-img img {
+.sec-5__img img {
     width: 100%;
 }
 
-.sec-5-info {
+.sec-5__info {
     display: flex;
     position: absolute;
     background: #fff;
@@ -386,7 +389,7 @@ body {
     justify-content: center;
 }
 
-.sec-5-info h3 {
+.sec-5__info h3 {
     color: #007bff;
 }
 
@@ -402,33 +405,33 @@ body {
     /* filter: invert(15%) sepia(80%) saturate(3000%) hue-rotate(200deg) brightness(100%) contrast(100%); */
 }
 
-.sec-6-text {
+.sec-6__text {
     color: #fff;
 }
 
-.sec-6-text::before {
+.sec-6__text::before {
     background-color: #fff;
 }
 
-.sec-6-text::after {
+.sec-6__text::after {
     content: 'What they said';
     background-color: #3a226c;
     color: #fff;
 }
 
-.sec-6-content {
+.sec-6__content {
     padding: 2% 0;
 }
 
-.sec-6-slider {
+.sec-6__slider {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
 }
 
-.sec-6-list {
+.sec-6__list {
     display: flex;
 }
 
-.sec-6-item {
+.sec-6__item {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -440,77 +443,77 @@ body {
     transition: ease-in-out 2s;
 }
 
-.sec-6-item .image {
+.sec-6__item .image {
     padding-bottom: 3%;
 }
 
-.sec-6-item img {
+.sec-6__item img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
 }
 
-.sec-6-item .detail {
+.sec-6__item .detail {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sec-6-item .name {
+.sec-6__item .name {
     font-size: 1.8em;
     font-weight: 700;
     line-height: 1;
 }
 
-.sec-6-item .rate i {
+.sec-6__item .rate i {
     color: #007bff;
 }
 
-.sec-6-item .context {
+.sec-6__item .context {
     font-size: 1.5em;
     line-height: 30px;
 }
 
-.sec-6-item .job {
+.sec-6__item .job {
     font-style: italic;
     font-size: 1.25em;
     font-weight: 500;
     margin-bottom: 3%;
 }
 
-.sec-6-img {
+.sec-6__img {
     display: flex;
     justify-content: flex-end;
     order: 2;
     height: 100%;
 }
 
-.sec-6-img img {
+.sec-6__img img {
     width: 100%;
     height: 100%;
 }
 
-.sec-6-number {
+.sec-6__number {
     padding-top: 3%;
 }
 
-.sec-6-number-item {
+.sec-6__number-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
 }
 
-.sec-6-number-item i {
+.sec-6__number-item i {
     font-size: 50px;
     color: #007bff;
 }
 
-.sec-6-number-item span {
+.sec-6__number-item span {
     font-size: 1.5em;
 }
 
-.sec-6-number-item h2 {
+.sec-6__number-item h2 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 50px;
@@ -519,57 +522,57 @@ body {
 
 /*--------Section 7 - Contact--------*/
 
-.sec-7-text::after {
+.sec-7__text::after {
     content: "Where I Am";
     background: var(--fourth-color);
 }
 
-.sec-7-content {
+.sec-7__content {
     padding: 2% 0;
 }
 
-.sec-7-map iframe {
+.sec-7__map iframe {
     width: 100%;
     height: 13em;
 }
 
-.sec-7-list {
+.sec-7__list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: var(--second-color);
 }
 
-.sec-7-item {
+.sec-7__item {
     display: flex;
     align-items: center;
     position: relative;
     margin: 2%;
 }
 
-.sec-7-item a {
+.sec-7__item a {
     color: var(--second-color);
 }
 
-.sec-7-item i {
+.sec-7__item i {
     font-size: 1.5em;
     color: #007bff;
     width: 24px;
     height: 24px;
 }
 
-.sec-7-item p {
+.sec-7__item p {
     font-size: 1.5em;
     padding: 0 8px;
     position: relative;
     display: inline-block;
 }
 
-.sec-7-form .row div {
+.sec-7__form .row div {
     padding: 0 0.2em;
 }
 
-.sec-7-form input {
+.sec-7__form input {
     width: 100%;
     height: 4.5em;
     font-size: 1em;
@@ -580,7 +583,7 @@ body {
     background: 0 0;
 }
 
-.sec-7-form-text input {
+.sec-7__form-text input {
     height: 6.25em;
 }
 
@@ -589,13 +592,13 @@ body {
     transition: all ease 0.3s;
 }
 
-.sec-7-btn {
+.sec-7__btn {
     display: flex;
     justify-content: flex-end;
     margin-top: 1em;
 }
 
-.sec-7-btn button {
+.sec-7__btn button {
     font-size: 1em;
     font-weight: 500;
     border: none;
@@ -603,7 +606,7 @@ body {
     background: none;
 }
 
-.sec-7-btn button:hover {
+.sec-7__btn button:hover {
     color: #007bff;
     transition: all ease 0.3s;
     cursor: pointer;
@@ -612,65 +615,65 @@ body {
 
 /*--------Section 8 - Blog--------*/
 
-.sec-8-text:before {
+.sec-8__text:before {
     bottom: -10px;
 }
 
-.sec-8-text:after {
+.sec-8__text:after {
     content: "What I Wrote";
     bottom: -18px;
     min-width: 5.6em;
 }
 
-.sec-8-item {
+.sec-8__item {
     background: #f9f9f9;
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
     margin: 5% 0;
 }
 
-.sec-8-item .image {
+.sec-8__item .image {
     width: 100%;
     height: 200px;
     overflow: hidden;
 }
 
-.sec-8-item .image img {
+.sec-8__item .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.sec-8-item .content {
+.sec-8__item .content {
     padding: 5%;
 }
 
-.sec-8-item .link {
+.sec-8__item .link {
     font-size: 1.25em;
 }
 
-.sec-8-item .link a {
+.sec-8__item .link a {
     color: #0052aa;
 }
 
-.sec-8-item .link span {
+.sec-8__item .link span {
     color: #000;
 }
 
-.sec-8-item h3 {
+.sec-8__item h3 {
     font-size: 1.8em;
     color: #007bff;
     line-height: 1;
     text-align: center;
 }
 
-.sec-8-item p {
+.sec-8__item p {
     font-size: 1em;
     color: #000;
     line-height: 1.5;
     text-align: start;
 }
 
-.sec-8-item .btn {
+.sec-8__item .btn {
     color: #0052aa;
     cursor: pointer;
     font-size: 1.25em;
@@ -683,17 +686,11 @@ body {
     background: linear-gradient(0deg, #007bff, var(--fourth-color));
 }
 
-.logo {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-
-.text {
+.sec-9__quotes {
     margin-bottom: 5%;
 }
 
-.text p {
+.sec-9__quotes p {
     font-size: 1.3em;
     font-weight: 500;
     font-style: italic;
@@ -701,20 +698,25 @@ body {
     color: var(--second-color);
 }
 
-.user {
+.sec-9__user {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.info {
+.sec-9__user img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.sec-9__info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.info .name,
-.info .work {
+.sec-9__info div {
     font-size: 1.5em;
     font-weight: 500;
     color: var(--second-color);
@@ -732,7 +734,7 @@ body {
     background-position: center;
 }
 
-.sec-10-social {
+.sec-10__social {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -740,12 +742,12 @@ body {
     padding-bottom: 5%;
 }
 
-.sec-10-social a {
+.sec-10__social a {
     font-size: 2em;
     color: #fff;
 }
 
-.sec-10-copyright {
+.sec-10__copyright {
     display: flex;
     color: #fff;
     font-size: 1em;
