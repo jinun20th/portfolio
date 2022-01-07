@@ -1,5 +1,5 @@
 var menu = document.querySelector('#nav-menu');
-var navbar = document.querySelector('.nav-list');
+var navbar = document.querySelector('.sec-1__nav-list');
 var i = 0;
 
 menu.onclick = () => {

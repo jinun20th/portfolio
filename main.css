@@ -13,7 +13,8 @@
     --second-color: #000;
     --third-color: #fff;
     --fourth-color: #fff;
-    --fifth-color: #e0e0e0
+    --fifth-color: #e0e0e0;
+    --blue-color: #007bff;
 }
 
 .overlay {
@@ -39,7 +40,7 @@
 
 html,
 body {
-    background-color: var(--first-color);
+    background: var(--first-color);
     line-height: 1.5;
     font-family: 'Source Sans 3', sans-serif;
     scroll-behavior: smooth;
@@ -84,7 +85,7 @@ body {
     display: none;
     border: none;
     font-size: 1.8em;
-    color: #007bff;
+    color: var(--blue-color);
     position: relative;
 }
 
@@ -95,7 +96,7 @@ body {
 #darkmode-btn {
     display: none;
     font-size: 1.8em;
-    color: #007bff;
+    color: var(--blue-color);
 }
 
 .sec-1__nav-brand {
@@ -120,7 +121,7 @@ body {
 }
 
 .sec-1__nav-text span {
-    color: #007bff;
+    color: var(--blue-color);
 }
 
 .sec-1__nav-list li {
@@ -140,8 +141,8 @@ body {
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1;
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+    color: var(--blue-color);
+    border-bottom: 2px solid var(--blue-color);
     transition: color .2s linear;
 }
 
@@ -170,7 +171,7 @@ body {
 }
 
 .sec-2__input {
-    color: #007bff;
+    color: var(--blue-color);
 }
 
 .sec-2__text-2 {
@@ -183,9 +184,9 @@ body {
     width: 100%;
     font-size: 1em;
     font-weight: 500;
-    color: #007bff;
+    color: var(--blue-color);
     border-radius: 20px;
-    border: 1px solid #007bff;
+    border: 1px solid var(--blue-color);
     padding: 1.25em 0;
     margin: 1.25em 0.5em 0 0;
 }
@@ -195,12 +196,12 @@ body {
 }
 
 .--bg-blue {
-    background-color: #007bff;
+    background-color: var(--blue-color);
 }
 
 .sec-2__btn:hover {
     background-color: transparent;
-    color: #007bff;
+    color: var(--blue-color);
     cursor: pointer;
     transition: all ease 0.4s;
 }
@@ -265,7 +266,7 @@ body {
 
 .sec-3__item i {
     font-size: 3.5em;
-    color: #007bff;
+    color: var(--blue-color);
 }
 
 .sec-3__item h2 {
@@ -304,7 +305,7 @@ body {
 
 .sec-4__item i {
     font-size: 3.5em;
-    color: #007bff;
+    color: var(--blue-color);
 }
 
 .sec-4__item h2 {
@@ -356,7 +357,7 @@ body {
     background: #fff;
     justify-content: center;
     align-items: center;
-    color: #007bff;
+    color: var(--blue-color);
     font-size: 1.8em;
     transition: transformY(-100%) 0.5s;
 }
@@ -390,7 +391,7 @@ body {
 }
 
 .sec-5__info h3 {
-    color: #007bff;
+    color: var(--blue-color);
 }
 
 
@@ -466,7 +467,7 @@ body {
 }
 
 .sec-6__item .rate i {
-    color: #007bff;
+    color: var(--blue-color);
 }
 
 .sec-6__item .context {
@@ -506,7 +507,7 @@ body {
 
 .sec-6__number-item i {
     font-size: 50px;
-    color: #007bff;
+    color: var(--blue-color);
 }
 
 .sec-6__number-item span {
@@ -556,7 +557,7 @@ body {
 
 .sec-7__item i {
     font-size: 1.5em;
-    color: #007bff;
+    color: var(--blue-color);
     width: 24px;
     height: 24px;
 }
@@ -588,7 +589,7 @@ body {
 }
 
 .form-control:focus {
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid var(--blue-color);
     transition: all ease 0.3s;
 }
 
@@ -607,7 +608,7 @@ body {
 }
 
 .sec-7__btn button:hover {
-    color: #007bff;
+    color: var(--blue-color);
     transition: all ease 0.3s;
     cursor: pointer;
 }
@@ -661,7 +662,7 @@ body {
 
 .sec-8__item h3 {
     font-size: 1.8em;
-    color: #007bff;
+    color: var(--blue-color);
     line-height: 1;
     text-align: center;
 }
@@ -728,7 +729,7 @@ body {
 .section-10 {
     position: relative;
     background-image: url(./assets/img/map-white.png);
-    background-color: #007bff;
+    background-color: var(--blue-color);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -769,7 +770,7 @@ body {
     right: 0;
     height: 100hv;
     width: 100%;
-    background-color: #007bff;
+    background-color: var(--blue-color);
     z-index: 999;
     display: none;
 }
@@ -882,7 +883,7 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 50px;
-    background: #007bff;
+    background: var(--blue-color);
     padding: 0.3em;
 }
 
