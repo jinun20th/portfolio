@@ -134,13 +134,9 @@ body {
     font-weight: 500;
     line-height: 1;
     color: var(--second-color);
-    transition: width 0.2s ease-out, background-color .2s ease-out;
 }
 
 .sec-1__nav-list li a:hover {
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 1;
     color: var(--blue-color);
     border-bottom: 2px solid var(--blue-color);
     transition: color .2s linear;

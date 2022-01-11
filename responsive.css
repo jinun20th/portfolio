@@ -102,6 +102,9 @@
     .sec-2__text-1 {
         font-size: 2em;
     }
+    .sec-2-btn {
+        padding: 1em;
+    }
     .sec-3__item h2 {
         text-align: center;
     }
