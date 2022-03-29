@@ -1,0 +1,19 @@
+{
+  "name": "jinun20th",
+  "version": "1.0.0",
+  "description": "Portfoliotest website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alutom2002/Jinun20th.git"
+  },
+  "author": "Jinun20th",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alutom2002/Jinun20th/issues"
+  },
+  "homepage": "https://github.com/alutom2002/Jinun20th#readme"
+}
