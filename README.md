@@ -9,7 +9,7 @@ I am currently in my 3rd year of university of information technology, majoring 
 
 ## Projects
 This is a simple portfolio website template that I built using HTML, CSS, and Bootstrap. It's fully responsive and customizable.
-<a href="https://github.com/janedoe/portfolio-template">Here's a link to the GitHub repository.</a>
+<a href="https://github.com/janedoe/portfolio-template">Here's a link to the portfolio website.</a>
 
 ## Contact Me
 If you're interested in working with me or just want to say hi, you can reach me via:
@@ -18,7 +18,9 @@ If you're interested in working with me or just want to say hi, you can reach me
   <li>LinkedIn: https://www.linkedin.com/in/c%C3%B4ng-th%C3%A0nh-phan-05a7b7237/</li>
   <li>Facebook: https://www.facebook.com/ctp.congthanhphan/</li>
 </ul>
+
 ## Technologies Used
+
 <ul>
   <li>HTML</li>
   <li>CSS</li>
@@ -32,6 +34,7 @@ If you're interested in working with me or just want to say hi, you can reach me
   <li>Node.js</li>
   <li>Boostrap</li>
 </ul>
+
 ## License
 This project is licensed under the MIT License.
 
