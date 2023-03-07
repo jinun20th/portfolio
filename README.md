@@ -20,19 +20,29 @@ If you're interested in working with me or just want to say hi, you can reach me
 </ul>
 
 ## Technologies Used
-
+Languages:
 <ul>
   <li>HTML</li>
   <li>CSS</li>
+  <li>C++</li>
+  <li>Java</li>
   <li>JavaScript</li>
   <li>Php</li>
   <li>Solidity</li>
 </ul>
+Framework:
 <ul>
   <li>Reat</li>
   <li>Laravel</li>
-  <li>Node.js</li>
+  <li>Node.js</li>  
+  <li>Express.js</li>
   <li>Boostrap</li>
+</ul>
+Database:
+<ul>
+  <li>MySQL</li>
+  <li>Firebase</li>
+  <li>Mongo</li>
 </ul>
 
 ## License
