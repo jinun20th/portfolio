@@ -8,26 +8,30 @@ I am currently in my 3rd year of university of information technology, majoring 
 <a href="https://example.com/janedoe_resume.pdf">Here's a link to my resume in PDF format.</a>
 
 ## Projects
-This is a simple portfolio website template that I built using HTML, CSS, and Bootstrap. It's fully responsive and customizable. <a href="https://github.com/janedoe/portfolio-template">Here's a link to the GitHub repository.</a>
+This is a simple portfolio website template that I built using HTML, CSS, and Bootstrap. It's fully responsive and customizable.
+<a href="https://github.com/janedoe/portfolio-template">Here's a link to the GitHub repository.</a>
 
 ## Contact Me
 If you're interested in working with me or just want to say hi, you can reach me via:
-
-Email: phancongthanh23071999@gmail.com
-LinkedIn: https://www.linkedin.com/in/c%C3%B4ng-th%C3%A0nh-phan-05a7b7237/
-Facebook: https://www.facebook.com/ctp.congthanhphan/
-
+<ul>
+  <li>Email: phancongthanh23071999@gmail.com</li>
+  <li>LinkedIn: https://www.linkedin.com/in/c%C3%B4ng-th%C3%A0nh-phan-05a7b7237/</li>
+  <li>Facebook: https://www.facebook.com/ctp.congthanhphan/</li>
+</ul>
 ## Technologies Used
-HTML
-CSS
-JavaScript
-Php
-React
-Laravel
-Node.js
-Boostrap
-Solidity
-
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Php</li>
+  <li>Solidity</li>
+</ul>
+<ul>
+  <li>Reat</li>
+  <li>Laravel</li>
+  <li>Node.js</li>
+  <li>Boostrap</li>
+</ul>
 ## License
 This project is licensed under the MIT License.
 
